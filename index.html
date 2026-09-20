@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#07080b">
+<meta name="description" content="Lucky Boost — Telegram Mini App">
+<title>Lucky Boost</title>
+<link rel="stylesheet" href="./css/styles.css">
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+<main class="app">
+<header class="top"><strong class="logo">LUCKY BOOST</strong><span class="badge" data-i18n="app">Telegram Mini App</span></header>
+<section id="language" class="screen"><div class="center"><h1 class="title" data-i18n="choose">Выберите язык</h1><p class="sub" data-i18n="chooseSub">Выберите язык интерфейса.</p></div><div class="langs"><button class="lang" data-lang="ro">🇷🇴 <b>Română</b><span>›</span></button><button class="lang" data-lang="en">🇬🇧 <b>English</b><span>›</span></button><button class="lang" data-lang="ru">🇷🇺 <b>Русский</b><span>›</span></button></div></section>
+<section id="home" class="screen hidden"><div class="card center"><div class="icon">🍀</div><h1 class="title" data-i18n="homeTitle"></h1><p class="sub" data-i18n="homeSub"></p><button id="start" class="btn"></button><button id="change" class="text-btn"></button></div></section>
+<section id="loading" class="screen hidden"><div class="card"><div class="center"><div class="icon">⚙️</div><h1 class="title" data-i18n="loading"></h1><p class="sub" data-i18n="wait"></p></div><div class="progress"><div id="bar"></div></div><div id="steps" class="steps"></div></div></section>
+<section id="result" class="screen hidden"><div class="card center"><div class="icon">✨</div><h1 class="title" data-i18n="result"></h1><p class="sub" data-i18n="resultSub"></p><div id="code" class="code"></div><button id="copy" class="btn"></button><a class="btn green" href="https://example.com/register" target="_blank" rel="noopener" data-i18n="register"></a><button id="again" class="btn secondary"></button><button id="changeResult" class="text-btn"></button></div></section>
+<footer class="footer">Lucky Boost • <span data-i18n="demo">Демонстрационная версия</span></footer>
+</main><script src="./js/app.js"></script>
+</body></html>
